@@ -20,7 +20,7 @@ public class PalTrackerApplication {
     }
 
     @Bean
-    TimeEntryRepository timeEntryRepository(){
+    TimeEntryRepository  jdbcTimeEntryRepository(){
         return new InMemoryTimeEntryRepository();
     }
 
