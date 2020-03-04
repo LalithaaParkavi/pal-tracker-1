@@ -65,7 +65,7 @@ jobs:
     - name: Migate tracker-database
       run: |
         cf login -a "$CF_API_URL" -o "$CF_ORG" -s "$CF_SPACE" -u "$CF_USERNAME" -p "$CF_PASSWORD"
-        sudo chmod +x scripts/migrate-databases.sh && scripts/migrate-databases.sh pal-tracker .
+        sudo chmod +x scripts/migrate-databases.sh && scripts/migrate-databases.sh pal-tracker_lab_5 .
       env:
         CF_API_URL: ${{ secrets.CF_API_URL }}
         CF_ORG: ${{ secrets.CF_ORG }}
