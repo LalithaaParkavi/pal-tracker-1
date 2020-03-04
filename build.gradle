@@ -62,8 +62,8 @@ bootJar {
 }
 flyway {
     url = developmentDbUrl
-    user = "tracker"
-    password = ""
+    user = "root"
+    password = "root"
     locations = ["filesystem:databases/tracker/migrations"]
 }
 
